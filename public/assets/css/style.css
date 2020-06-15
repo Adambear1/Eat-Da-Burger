@@ -1,0 +1,79 @@
+* {
+  /* display: flex; */
+  background-color: transparent;
+  flex-direction: column;
+}
+
+.main-container {
+  background: url(../images/burger-on-blue-ceramic-plate-2015097.jpg) no-repeat center center;
+  background-size: cover;
+  margin-left: 15%;
+  margin-right: 15%;
+  height: 100vh
+}
+
+.header, .eaten, .create-form {
+  /* margin-left: auto !important;
+  margin-right: auto !important; */
+  /* float: center !important; */
+  text-align: center;
+  color: white;
+}
+/* h1, h2 {
+  display: flex;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  float: center !important;
+} */
+
+ul {
+  height: auto;
+  width: 400px;
+  background-color: rgba(0,0,0,.3);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+li {
+  /* display: inline !important; */
+  padding: 5px;
+  margin: 5px;
+  background: rgba(0,0,0,.3);
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 1000px; */
+}
+li button {
+  width: auto;
+  border-radius: 25px;
+}
+li button:hover {
+  background-color: rgba(255,255,255,.5);
+}
+
+button {
+  cursor: pointer;
+  border: 1px solid rgba(255,255,255,.3);
+  border-radius: 25px;
+  margin-top: 10px;
+  color: white;
+  background-color: rgba(255,255,255,.05);
+}
+
+.label {
+  font-weight: bold;
+}
+
+.create-update-form {
+  padding: 5px;
+  margin: 5px;
+  background: aqua;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
+
+.delete {
+  text-align: right;
+} 
