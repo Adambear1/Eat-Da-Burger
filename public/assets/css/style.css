@@ -4,32 +4,54 @@
   flex-direction: column;
 }
 
+
+body, html * {
+  z-index: 1;
+    /* height: 100%; */
+}
+
+
 .main-container {
-  background: url(../images/burger-on-blue-ceramic-plate-2015097.jpg) no-repeat center center;
-  background-size: cover;
-  margin-left: 15%;
-  margin-right: 15%;
-  height: 100vh
+    background: url(../images/burger-on-blue-ceramic-plate-2015097.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    overflow: hidden;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.main-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh !important;
+    background-color: rgba(0,0,0,.5);
+    z-index: 0;
 }
 
 .header, .eaten, .create-form {
-  /* margin-left: auto !important;
-  margin-right: auto !important; */
-  /* float: center !important; */
   text-align: center;
   color: white;
 }
-/* h1, h2 {
-  display: flex;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  float: center !important;
-} */
+
 
 ul {
   height: auto;
   width: 400px;
-  background-color: rgba(0,0,0,.3);
+  background: url(../images/texture-wall-floor-stone-8892.jpg);
+  border-radius: 5px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -38,12 +60,15 @@ li {
   /* display: inline !important; */
   padding: 5px;
   margin: 5px;
-  background: rgba(0,0,0,.3);
-  margin-left: auto;
-  margin-right: auto;
+  background: rgba(0,0,0,.05);
+  border: 1px solid white;
+  width: 90%;
   /* width: 1000px; */
+  border-radius: 5px;
+  list-style-type: none;
 }
 li button {
+
   width: auto;
   border-radius: 25px;
 }
@@ -77,3 +102,21 @@ button {
 .delete {
   text-align: right;
 } 
+
+input{
+  background-color: white;
+  opacity: 90%;
+  border: none;
+  border-radius: 5px;
+}
+
+input.active {
+  opacity: 100%
+}
+
+button[type=submit]{
+  background-color: red;
+  border: none;
+  border-radius: 5px;
+  color: white
+}

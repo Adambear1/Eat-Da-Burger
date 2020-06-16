@@ -1,6 +1,6 @@
-<h1 class="header">burgers!</h1>
+<h1 class="header">🍔 Burgers 🍔</h1>
 
-<h2 class="eaten">burgers that are not eaten!</h2>
+<h2 class="eaten">🍽️ Burgers Not Ate Yet 😋</h2>
 
 <ul>
   {{#each burgers}}
@@ -10,7 +10,7 @@
   {{/each}}
 </ul>
 
-<h2 class="eaten">burgers that are eaten!</h2>
+<h2 class="eaten">😁 Burgers Ate 👍</h2>
 
 <ul>
   {{#each burgers}}
@@ -20,18 +20,18 @@
   {{/each}}
 </ul>
 
-<h2 class="header">Add a burger</h2>
+<h2 class="header">Create A Burger 🥬🍅🐄</h2>
 <form class="create-form">
 
   <div class="form-group">
-    <label for="ca">burger Name:</label>
+    <label for="ca">Burger Name:</label>
     <input type="text" id="ca" name="name">
   </div>
 
   <div class="form-group">
-    <label for="eaten">eaten?</label><br>
-    <input type="radio" name="eaten" value="1" checked> Eat<br>
-    <input type="radio" name="eaten" value="0"> Order
+    <label for="eaten">Have you already eaten this burger?</label><br>
+    <input type="radio" name="eaten" value="1" checked> No<br>
+    <input type="radio" name="eaten" value="0"> Yes
   </div>
 
   <button type="submit">Add burger</button>
